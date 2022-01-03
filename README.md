@@ -27,11 +27,11 @@ Things you may want to cover:
 
 ## users テーブル
 
-| Column              | Type   | Options     |
-|-------------------- | ------ | ----------- |
-| name                | string | null: false |
-| email               | string | null: false |
-| encrypted_password  | string | null: false |
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| name               | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 
 ### Association
 
@@ -71,7 +71,7 @@ Things you may want to cover:
 | user    | references | null: false, foreign_key: true |
 | room    | references | null: false, foreign_key: true |
 
-## Association
+### Association
 
 - belongs_to :room
 - belongs_to :user
